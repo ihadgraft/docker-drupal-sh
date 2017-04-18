@@ -1,4 +1,4 @@
-# Drupal shell docker images (v1.0.0)
+# Drupal shell docker images (v1.0.1)
 
 Please see the README file associated with each image tag:
 
