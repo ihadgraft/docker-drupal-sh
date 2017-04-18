@@ -21,6 +21,7 @@ RUN wget https://github.com/drush-ops/drush/archive/${DRUSH7_VER}.tar.gz \
 RUN cd /opt/drush-${DRUSH7_VER} && /opt/composer.phar install
 
 RUN wget https://github.com/drush-ops/drush/releases/download/${DRUSH8_VER}/drush.phar -O /opt/drush.phar
+RUN chmod +x /opt/drush.phar
 
 RUN php -r "readfile('https://drupalconsole.com/installer');" > drupal.phar \
   && chmod +x drupal.phar \
